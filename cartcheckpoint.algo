@@ -1,0 +1,17 @@
+PROCEDURE cartlist(VAR allcart : ARRAY_OF INTEGER;)
+VAR
+    i :INTEGER = 1
+    number: INTEGER 
+    value : INTEGER
+    
+BEGIN
+    FOR i FROM 1 TO allcart.length-1 STEP step  DO
+        value: = allcart[i]
+        number = i-1
+        WHILE (number>=0 and allcart[number]>value) DO
+            allcart[number] : = arr[number] ; 
+            number := j-1 ;
+        END_WHILE
+        arr[number+1] = value
+    END_FOR
+END
